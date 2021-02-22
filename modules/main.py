@@ -6,7 +6,7 @@ class Bot:
         lang = 'en'
         self._supported_langs = ['ru', 'en']
         self.loc = Locale(lang).message
-        self.bot = TeleBot('885748551:AAFykPTT0t0yjAe4HBvKbL_Pco129q7xQ-Q')
+        self.bot = TeleBot(input())
         self.__connect()
     def __connect(self):
         self.bot.polling(none_stop=True)
